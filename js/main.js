@@ -8,8 +8,8 @@ const allSituations = [
     solution: "protect",
   },
   {
-    img: "images/relieve.jpg",
-    solution: "relieve",
+    img: "images/relief.jpg",
+    solution: "relief",
   },
 ];
 let currentSituation;
