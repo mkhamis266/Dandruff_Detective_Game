@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/fav.ico" />
+    <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="images/fav.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css?v=1" />
+    <title>Dandruff Detective Game</title>
+  </head>
+
+  <body>
+    <div id="startPage" class="page">
+      <div class="start-button d-flex align-items-center justify-content-center" onclick="startGame()">start game</div>
+    </div>
+    <div id="gamePage" class="page">
+      <div class="container">
+        <h1 class="text-center my-3">Dandruff Detective Game</h1>
+        <div class="game-pannel w-75 mx-auto">
+          <div class="situation-img-container text-center my-5">
+            <img src="images/protect.jpg" alt="" />
+          </div>
+          <div class="situation-opttions d-flex justify-content-around">
+            <button
+              class="btn btn-primary"
+              onclick="solveSituation('treat')
+            ">
+              Treat
+            </button>
+            <button class="btn btn-danger" onclick="solveSituation('protect')">Protect</button>
+            <button class="btn btn-success" onclick="solveSituation('relieve')">Relieve</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="finalPage" class="page">
+      <p class="my-5 w-50 mx-auto text-white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident deleniti laborum cupiditate neque, vero debitis perspiciatis, placeat quo dicta officiis omnis consequatur dolor ad nobis accusamus! Expedita quia quod fugiat tempore perspiciatis laudantium obcaecati fuga itaque natus
+        beatae cupiditate quaerat minus architecto, nulla cumque amet. Laboriosam aspernatur rem aliquam! Unde temporibus obcaecati asperiores quaerat amet eaque, reiciendis voluptatem pariatur impedit totam dolore possimus vel perferendis, fugiat magni, omnis tempora dicta? Ullam, iste repudiandae,
+        odio enim dolorem beatae suscipit vel et tempore a tempora quia distinctio harum similique facere incidunt ut, excepturi quidem vero doloribus itaque sed! Adipisci illum hic doloribus obcaecati harum possimus alias expedita officiis ducimus nam iusto sunt nisi, et natus! Et, blanditiis
+      </p>
+      <div class="restart-button d-flex align-items-center justify-content-center" onclick="restartGame()">restart game</div>
+    </div>
+
+    <div class="modal fade" id="tryAgainModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body text-center text-danger">Wrong Solution</div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="tryAgain()">Try Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
