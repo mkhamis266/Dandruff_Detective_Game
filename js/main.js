@@ -1,14 +1,14 @@
 const allSituations = [
   {
-    img: "../images/treat.gif",
+    img: "images/treat.gif",
     solution: "treat",
   },
   {
-    img: "../images/protect.gif",
+    img: "images/protect.gif",
     solution: "protect",
   },
   {
-    img: "../images/relief.gif",
+    img: "images/relief.gif",
     solution: "relief",
   },
 ];
