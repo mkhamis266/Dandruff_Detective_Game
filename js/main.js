@@ -24,7 +24,7 @@ function getRandomSituation() {
 
 function renderSituation() {
   console.log(currentSituation);
-  $(".situation-img-container img").attr("src", currentSituation.img+`${new Date().getTime()}`);
+  $(".situation-img-container img").attr("src", currentSituation.img+`?val=${new Date().getTime()}`);
 }
 
 function startGame() {
